@@ -1,0 +1,56 @@
+{
+  "results": [
+    {
+      "question": "What’s the closest planet to the sun?",
+      "answers": [
+        { "answer": "Mercury", "correct": true },
+        { "answer": "Mars" },
+        { "answer": "Pluto" },
+        { "answer": "Uranus" }
+      ]
+    },
+    {
+      "question": "What is the fastest aquatic animal?",
+      "answers": [
+        { "answer": "Whale" },
+        { "answer": "Dolphin" },
+        { "answer": "Sailfish", "correct": true },
+        { "answer": "Shark" }
+      ]
+    },
+    {
+      "question": "What is the sweet food made by bees?",
+      "answers": [
+        { "answer": "Ice Cream" },
+        { "answer": "Caramel" },
+        { "answer": "Honey", "correct": true },
+        { "answer": "Chocolate" }
+      ]
+    },
+    {
+      "question": "Are worker bees male or female?",
+      "answers": [
+        { "answer": "Female" },
+        { "answer": "Male", "correct": true }
+      ]
+    },
+    {
+      "question": "What food is the most ordered in America?",
+      "answers": [
+        { "answer": "Spaguetti" },
+        { "answer": "BBQ Wings" },
+        { "answer": "Pizza" },
+        { "answer": "Fried chicken", "correct": true }
+      ]
+    },
+    {
+      "question": "What’s the name of the toy cowboy in Toy Story?",
+      "answers": [
+        { "answer": "Buzz Lightyear" },
+        { "answer": "Woody", "correct": true },
+        { "answer": "Rex" },
+        { "answer": "Andy" }
+      ]
+    }
+  ]
+}
