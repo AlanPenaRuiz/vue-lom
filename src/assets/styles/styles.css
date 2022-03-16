@@ -1,0 +1,42 @@
+.btn { box-sizing: border-box; appearance: none; background-color: transparent; border: 2px solid #e60b0b; border-radius: 0.6em; color: #e60b0b; cursor: pointer; font-size: 1rem; font-weight: 400; line-height: 1; margin: 20px; padding: 1.2em 2.8em; text-decoration: none; text-align: center; text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+
+.btn:hover, .btn:focus { color: #fff; outline: 0; }
+
+.btn-home { transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out; }
+
+.btn-home:hover { box-shadow: 0 0 40px 40px #e60b0b inset; }
+
+.container-main { display: flex; width: 100%; height: 100%; justify-content: center; }
+
+.container-game { display: flex; width: 40%; height: 85%; background-color: white; text-align: center; flex-flow: column; border: 1px solid #e7eae0; border-radius: 10px; position: absolute; top: 0; bottom: 0; margin: auto; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.container-home { justify-content: space-evenly; align-content: center; }
+
+.game-header { display: flex; width: 100%; height: 20%; border-bottom: 1px solid #e7eae0; justify-content: center; align-items: center; background-color: #e7eae0; border-radius: 10px 10px 0px 0px; }
+
+.progress { display: flex; width: 100%; height: 5px; background-color: #6a80ca; transition: 0.5s; }
+
+.game-answers { margin: auto; display: flex; width: 100%; justify-content: center; }
+
+ul { display: flex; width: 80%; margin: 0; padding: 0; flex-flow: column; }
+
+li { list-style: none; line-height: 2; border: 1px solid #cdd2d2; margin-bottom: 20px; border-radius: 15px; cursor: pointer; transition: 0.3s; }
+
+li:hover { /*transform: scale(1.1);*/ background-color: #e7eae0; }
+
+li > div { float: right; margin-top: 7px; margin-right: 7px; color: white; }
+
+li.correct { border: 1px solid #4adb4a; background-color: #4adb4a; color: white; font-weight: 600; pointer-events: none; }
+
+li.incorrect { border: 1px solid #f07564; background-color: #f07564; color: white; font-weight: 600; pointer-events: none; }
+
+li.clicked { pointer-events: none; }
+
+.btn-container { display: flex; justify-content: center; align-items: center; height: 20; margin-bottom: 12px; }
+
+button { background: #42b983; border: 1px solid #42b983; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px; box-sizing: border-box; color: #ffffff; cursor: pointer; display: inline-block; font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif; font-size: 16px; font-weight: 800; line-height: 16px; min-height: 40px; margin-right: 5px; outline: 0; padding: 12px 14px; text-align: center; text-rendering: geometricprecision; text-transform: none; user-select: none; -webkit-user-select: none; touch-action: manipulation; vertical-align: middle; }
+
+button:hover, button:active { background-color: initial; background-position: 0 0; color: #42b983; }
+
+button:active { opacity: 0.5; }
+/*# sourceMappingURL=styles.css.map */
