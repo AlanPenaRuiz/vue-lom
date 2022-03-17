@@ -101,7 +101,6 @@ export default {
     EventService.getEvents()
       .then((response) => {
         this.questions = response.data.results;
-        //console.log("events:", response.data.results);
       })
       .catch((error) => {
         console.log(error);
