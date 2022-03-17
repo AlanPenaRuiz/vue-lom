@@ -15,9 +15,9 @@
 
 .container-home { justify-content: space-evenly; align-content: center; color: white; }
 
-.container-home h1 { font-family: 'Permanent Marker', cursive; }
+.container-home h1 { font-family: "Permanent Marker", cursive; }
 
-.container-home p { font-family: 'Raleway', sans-serif; font-size: 20px; margin: 0 5%; line-height: 2; }
+.container-home p { font-family: "Raleway", sans-serif; font-size: 20px; margin: 0 5%; line-height: 2; }
 
 .game-header { display: flex; width: 100%; height: 20%; color: white; border-bottom: 1px solid #e7eae0; justify-content: center; align-items: center; border-radius: 10px 10px 0px 0px; background-image: url("/src/assets/img/star-background.jpg"); }
 
@@ -54,4 +54,8 @@ button:active { opacity: 0.5; }
 .button-footer:active, .button-footer:focus { outline: none; }
 
 .button-footer:hover { transform: scale(1.02); color: white; }
+
+.notFound { display: flex; flex-direction: column; align-items: center; color: white; background-color: rgba(0, 0, 0, 0.1); }
+
+.notFound button { margin: 15% 0 15% 0px; }
 /*# sourceMappingURL=styles.css.map */
