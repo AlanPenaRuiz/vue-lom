@@ -1,4 +1,5 @@
-.btn { box-sizing: border-box; appearance: none; background-color: transparent; border: 2px solid #e60b0b; border-radius: 0.6em; color: #e60b0b; cursor: pointer; font-size: 1rem; font-weight: 400; line-height: 1; margin: 20px; padding: 1.2em 2.8em; text-decoration: none; text-align: center; text-transform: uppercase; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+.btn { box-sizing: border-box; appearance: none; background-color: transparent; border: 2px solid #e60b0b; border-radius: 0.6em; color: #e60b0b; cursor: pointer; font-size: 1rem; font-weight: 400; line-height: 1; margin: 20px; padding: 1.2em 2.8em; text-decoration: none; text-align: center; text-transform: uppercase; font-family: "Montserrat", sans-serif; font-weight: 700; }
 
 .btn:hover, .btn:focus { color: #fff; outline: 0; }
 
@@ -8,27 +9,33 @@
 
 .container-main { display: flex; width: 100%; height: 100%; justify-content: center; }
 
-.container-game { display: flex; width: 40%; height: 85%; background-color: white; text-align: center; flex-flow: column; border: 1px solid #e7eae0; border-radius: 10px; position: absolute; top: 0; bottom: 0; margin: auto; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+.container-game { display: flex; width: 40%; height: 85%; color: white; background-image: url("/src/assets/img/star-background.jpg"); background-size: cover; text-align: center; flex-flow: column; border: 1px solid #e7eae0; border-radius: 10px; position: absolute; top: 0; bottom: 0; margin: auto; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
-.container-home { justify-content: space-evenly; align-content: center; }
+.container-home { justify-content: space-evenly; align-content: center; color: white; }
 
-.game-header { display: flex; width: 100%; height: 20%; border-bottom: 1px solid #e7eae0; justify-content: center; align-items: center; background-color: #e7eae0; border-radius: 10px 10px 0px 0px; }
+.container-home h1 { font-family: 'Permanent Marker', cursive; font-size: 50px; }
 
-.progress { display: flex; width: 100%; height: 5px; background-color: #6a80ca; transition: 0.5s; }
+.container-home p { font-family: 'Raleway', sans-serif; font-size: 26px; margin: 0 5%; line-height: 2; }
 
-.game-answers { margin: auto; display: flex; width: 100%; justify-content: center; }
+.game-header { display: flex; width: 100%; height: 20%; color: white; border-bottom: 1px solid #e7eae0; justify-content: center; align-items: center; border-radius: 10px 10px 0px 0px; background-image: url("/src/assets/img/star-background.jpg"); }
+
+.progress { display: flex; width: 100%; height: 5px; background-color: #e60b0b; transition: 0.5s; }
+
+.game-main { font-size: 26px; }
+
+.game-answers { font-size: 22px; margin: 0 auto; display: flex; width: 100%; justify-content: center; }
 
 ul { display: flex; width: 80%; margin: 0; padding: 0; flex-flow: column; }
 
 li { list-style: none; line-height: 2; border: 1px solid #cdd2d2; margin-bottom: 20px; border-radius: 15px; cursor: pointer; transition: 0.3s; }
 
-li:hover { /*transform: scale(1.1);*/ background-color: #e7eae0; }
+li:hover { /*transform: scale(1.1);*/ background-color: #a9f1f5; }
 
 li > div { float: right; margin-top: 7px; margin-right: 7px; color: white; }
 
-li.correct { border: 1px solid #4adb4a; background-color: #4adb4a; color: white; font-weight: 600; pointer-events: none; }
+li.correct { border: 1px solid #24c591d9; background-color: #24c591d9; color: white; font-weight: 600; pointer-events: none; }
 
-li.incorrect { border: 1px solid #f07564; background-color: #f07564; color: white; font-weight: 600; pointer-events: none; }
+li.incorrect { border: 1px solid #e60b0b; background-color: #e60b0b; color: white; font-weight: 600; pointer-events: none; }
 
 li.clicked { pointer-events: none; }
 
@@ -39,4 +46,10 @@ button { background: #42b983; border: 1px solid #42b983; border-radius: 6px; box
 button:hover, button:active { background-color: initial; background-position: 0 0; color: #42b983; }
 
 button:active { opacity: 0.5; }
+
+.button-footer { padding: 1rem 2rem; background: linear-gradient(210deg, rgba(187, 0, 47, 0.8), rgba(245, 0, 87, 0.6)); border-radius: 7px; border: none; }
+
+.button-footer:active, .button-footer:focus { outline: none; }
+
+.button-footer:hover { transform: scale(1.02); color: white; }
 /*# sourceMappingURL=styles.css.map */

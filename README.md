@@ -1,4 +1,4 @@
-# vue-loa-cathedral
+# vue-LOM-cathedral
 
 ## Project setup
 ```

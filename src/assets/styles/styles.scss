@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 $primary-color: #42b983;
+$correct: #24c591d9;
 $red: #e60b0b;
+$light-blue: #a9f1f5;
 
 .btn {
   box-sizing: border-box;
@@ -17,7 +21,7 @@ $red: #e60b0b;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 
   &:hover,
@@ -45,7 +49,10 @@ $red: #e60b0b;
   display: flex;
   width: 40%;
   height: 85%;
-  background-color: white;
+  color: white;
+  //background-color: white;
+  background-image: url("/src/assets/img/star-background.jpg");
+  background-size: cover;
   text-align: center;
   flex-flow: column;
   border: 1px solid #e7eae0;
@@ -59,28 +66,45 @@ $red: #e60b0b;
 .container-home {
   justify-content: space-evenly;
   align-content: center;
+  color: white;
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+  }
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    margin: 0 5%;
+    line-height: 2;
+  }
 }
 
 .game-header {
   display: flex;
   width: 100%;
   height: 20%;
+  color: white;
   border-bottom: 1px solid #e7eae0;
   justify-content: center;
   align-items: center;
-  background-color: #e7eae0;
+  //background-color: #e7eae0;
   border-radius: 10px 10px 0px 0px;
+  background-image: url("/src/assets/img/star-background.jpg");
 }
 .progress {
   display: flex;
   width: 100%;
   height: 5px;
-  background-color: rgb(106, 128, 202);
+  background-color: $red;
   transition: 0.5s;
+}
+.game-main {
+  font-size: 26px;
 }
 
 .game-answers {
-  margin: auto;
+  font-size: 22px;
+  margin: 0 auto;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -106,7 +130,7 @@ li {
 
 li:hover {
   /*transform: scale(1.1);*/
-  background-color: #e7eae0;
+  background-color: $light-blue;
 }
 
 li > div {
@@ -117,16 +141,16 @@ li > div {
 }
 
 li.correct {
-  border: 1px solid rgb(74, 219, 74);
-  background-color: rgb(74, 219, 74);
+  border: 1px solid $correct;
+  background-color: $correct;
   color: white;
   font-weight: 600;
   pointer-events: none;
 }
 
 li.incorrect {
-  border: 1px solid rgb(240, 117, 100);
-  background-color: rgb(240, 117, 100);
+  border: 1px solid $red;
+  background-color: $red;
   color: white;
   font-weight: 600;
   pointer-events: none;
@@ -179,4 +203,25 @@ button:active {
 
 button:active {
   opacity: 0.5;
+}
+
+.button-footer {
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    210deg,
+    rgba(187, 0, 47, 0.8),
+    rgba(245, 0, 87, 0.6)
+  );
+  border-radius: 7px;
+  border: none;
+}
+
+.button-footer:active,
+.button-footer:focus {
+  outline: none;
+}
+
+.button-footer:hover {
+  transform: scale(1.02);
+  color: white;
 }

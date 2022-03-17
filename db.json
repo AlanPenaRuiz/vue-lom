@@ -51,6 +51,42 @@
         { "answer": "Rex" },
         { "answer": "Andy" }
       ]
+    },
+    {
+      "question": "1+1?",
+      "answers": [
+        { "answer": "24" },
+        { "answer": "2", "correct": true },
+        { "answer": "0" },
+        { "answer": "I dont know" }
+      ]
+    },
+    {
+      "question": "0101101001010?",
+      "answers": [
+        { "answer": "ah?", "correct": true },
+        { "answer": "Yes", "correct": true },
+        { "answer": "0101", "correct": true },
+        { "answer": "Ok", "correct": true }
+      ]
+    },
+    {
+      "question": "What is 'cynophobia'?",
+      "answers": [
+        { "answer": "Fear of insects" },
+        { "answer": "Fear of dogs", "correct": true },
+        { "answer": "Fear of humans" },
+        { "answer": "Fear of cats" }
+      ]
+    },
+    {
+      "question": "Which animal can be seen on the Porsche logo?",
+      "answers": [
+        { "answer": "Unicorn" },
+        { "answer": "Jaguar" },
+        { "answer": "Rex" },
+        { "answer": "Horse", "correct": true }
+      ]
     }
   ]
 }

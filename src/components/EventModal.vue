@@ -14,7 +14,7 @@
           <div class="modal-body">
             <div id="score">
               Correct answers
-              <span class="highlight">
+              <span class="remark">
                 {{ score }} out of
                 {{ progress }}
               </span>
@@ -52,16 +52,7 @@ export default {
     subheader: String,
     score: Number,
     progress: Number,
-  },
-  data() {
-    return {
-      win: false,
-    };
-  },
-  created() {
-    if (this.score > this.progress * 0.8) {
-      this.win = true;
-    }
+    win: Boolean,
   },
 };
 </script>
@@ -88,13 +79,14 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 80%;
-  height: 60vw;
-  max-height: 60%;
+  align-items: center;
+  max-width: 70%;
+  height: 60%;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: white;
   border-radius: 6px;
+  font-size: 22px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
 }
@@ -112,11 +104,11 @@ export default {
 }
 
 .modal-header h2 {
-  color: rgb(0, 178, 72);
+  color: white;
 }
 
 .modal-header h3 {
-  color: rgb(0, 178, 72);
+  color: white;
 }
 
 .modal-body {
@@ -136,42 +128,17 @@ export default {
   justify-content: space-between;
 }
 
-.button-footer {
-  padding: 1rem 2rem;
-  background: linear-gradient(
-    210deg,
-    rgba(187, 0, 47, 0.8),
-    rgba(245, 0, 87, 0.6)
-  );
-  border-radius: 7px;
-  border: none;
-}
-
-.anchor-footer {
-  color: black;
-  text-decoration: none;
-  cursor: default;
-}
-
-.button-footer:active,
-.button-footer:focus {
-  outline: none;
-}
-
-.button-footer:hover {
-  transform: scale(1.02);
-}
-
-.highlight {
+.remark {
   border-radius: 4px;
   background-color: rgba(187, 0, 47, 0.3);
   padding: 0.25rem 0.5rem;
 }
 
 #score {
-  background-color: rgb(210, 200, 200);
+  background-color: rgb(241 241 241);
   border-radius: 5px;
   box-shadow: 2px 3px 9px gray;
+  width: 100%;
 }
 
 .modal-enter {
