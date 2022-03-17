@@ -47,6 +47,7 @@ $light-blue: #a9f1f5;
 
 .container-game {
   display: flex;
+  align-items: center;
   width: 40%;
   height: 85%;
   color: white;
@@ -102,6 +103,7 @@ $light-blue: #a9f1f5;
 }
 .game-main {
   font-size: 20px;
+  width: 70%;
 }
 
 .game-answers {
@@ -110,6 +112,20 @@ $light-blue: #a9f1f5;
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+.game-score {
+  width: 200px;
+  margin: 10px;
+  &:hover{
+    border: 1px solid $red;
+    border-radius: 15px;
+  }
+}
+
+.borderGreen:hover {
+  border: 1px solid $correct;
+  border-radius: 15px;
 }
 
 ul {

@@ -11,6 +11,9 @@
         for humanity. LOM only ask you to do one thing: Build a program that
         tests the human's value.
       </p>
+      <p>
+        <b>You need to get at least 7 answers right </b>
+      </p>
       <router-link to="/Game"
         ><button class="btn btn-home">START</button></router-link
       >

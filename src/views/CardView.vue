@@ -47,17 +47,22 @@
           </ul>
         </div>
       </div>
-      <div class="game-score">
+      <div
+        class="game-score"
+        @mouseover="isHovering = true"
+        @mouseout="isHovering = false"
+        v-bind:class="isHovering ? (win ? 'borderGreen' : '') : ''"
+      >
         <h2>Score</h2>
         <h2>{{ score }}/{{ questions.length }}</h2>
-        <div class="btn-reset">
-          <button class="button-footer" v-if="showReset" @click="reset">
-            Restart <i class="fas fa-sync-alt"></i>
-          </button>
-          <button class="button-footer" v-if="ShowModalBtn" @click="openModal">
-            Show Score <i class="fas fa-sync-alt"></i>
-          </button>
-        </div>
+      </div>
+      <div class="btn-reset">
+        <button class="button-footer" v-if="showReset" @click="reset">
+          Restart <i class="fas fa-sync-alt"></i>
+        </button>
+        <button class="button-footer" v-if="ShowModalBtn" @click="openModal">
+          Show Score <i class="fas fa-sync-alt"></i>
+        </button>
       </div>
     </div>
   </div>
@@ -86,19 +91,21 @@ export default {
       showModal: false,
       ShowModalBtn: false,
       win: false,
+      isHovering: false,
       ModalHeader: "You Lose",
       ModalSubHeader: "Humanity will be exterminated!",
     };
   },
   created() {
+    //Fetch questions db
     EventService.getEvents()
       .then((response) => {
         this.questions = response.data.results;
-        console.log("events:", response.data.results);
+        //console.log("events:", response.data.results);
       })
       .catch((error) => {
         console.log(error);
-
+        //Redirect to NotFound when search unknow subdomains
         this.$router.push({
           name: "404Resource",
           params: { resource: "event" },
@@ -135,15 +142,16 @@ export default {
       this.correct = false;
     },
     openModal() {
-      if (this.score >= this.questions.length * 0.5) {
+      if (this.score >= this.questions.length * 0.7) {
         (this.ModalHeader = "Congratulations!"),
           (this.ModalSubHeader = "You have saved humanity!"),
           (this.win = true);
       }
       this.showModal = true;
     },
+    // Reset data
     reset() {
-      Object.assign(this.$data, this.initialState()); // reset data in vue
+      Object.assign(this.$data, this.initialState());
     },
     initialState() {
       return {
@@ -165,7 +173,10 @@ export default {
   },
   watch: {
     progress: function (progress) {
-      console.log(progress);
+      if (this.score >= this.questions.length * 0.7) {
+        this.win = true;
+      }
+      //Call modal when finish
       if (progress >= 100) {
         this.showReset = true;
         this.ShowModalBtn = true;
