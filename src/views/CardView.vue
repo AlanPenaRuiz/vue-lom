@@ -160,7 +160,8 @@ export default {
   },
   watch: {
     progress: function (progress) {
-      if (progress > 100) {
+      console.log(progress);
+      if (progress >= 100) {
         this.showReset = true;
         this.ShowModalBtn = true;
         this.openModal();

@@ -64,10 +64,10 @@
     {
       "question": "0101101001010?",
       "answers": [
-        { "answer": "ah?", "correct": true },
+        { "answer": "ah?" },
         { "answer": "Yes", "correct": true },
-        { "answer": "0101", "correct": true },
-        { "answer": "Ok", "correct": true }
+        { "answer": "0101" },
+        { "answer": "Ok"}
       ]
     },
     {
